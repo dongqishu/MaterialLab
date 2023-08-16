@@ -45,6 +45,7 @@ using System.Text.RegularExpressions;
 
 
 Console.WriteLine(MyAtoi(" ++1"));
+Console.WriteLine(MySum(10));
 
 //if(null > 0)
 //{
@@ -96,6 +97,16 @@ static int MyAtoi(string s)
             int.TryParse(t, out result);
         }
     }   
+    return result;
+}
+
+static int MySum(int n)
+{
+    int result = 0;
+    for(int i = 0; i < n; i++)
+    {
+        result += i;
+    }
     return result;
 }
 
